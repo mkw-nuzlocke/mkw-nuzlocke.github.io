@@ -58,6 +58,21 @@ export const RACERS: Racer[] = [
 ];
 
 export const KAMEK_RACER_IDS = [
+  "cheep-cheep",
+  "cow",
+  "dry-bones",
+  "goomba",
+  "hammer-bro",
+  "monty-mole",
+  "nabbit",
+  "para-biddybud",
+  "penguin",
+  "piranha-plant",
+  "pokey",
+  "sidestepper",
+  "snowman",
+  "stingby",
+  "wiggler",
   "cataquack",
   "chargin-chuck",
   "coin-coffer",
