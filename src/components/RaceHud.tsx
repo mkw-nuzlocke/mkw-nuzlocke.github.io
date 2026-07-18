@@ -37,9 +37,9 @@ export function RaceHud({
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-8 px-4 py-8">
-      <div className="flex w-full items-start justify-between gap-4">
+      <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
         <PointsMeter points={points} />
-        <div className="flex shrink-0 items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2 self-end sm:self-start">
           <button
             type="button"
             onClick={onRedeemKamek}

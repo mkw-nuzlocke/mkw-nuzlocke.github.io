@@ -16,11 +16,11 @@ export function BrushHeading({ children, size = "lg", className = "" }: Props) {
 
   return (
     <div
-      className={`relative inline-flex items-center justify-center px-4 py-2 ${className}`}
+      className={`relative inline-flex max-w-full items-center justify-center px-4 py-2 ${className}`}
     >
       <motion.div
         aria-hidden
-        className="pointer-events-none absolute inset-x-[-20%] top-1/2 h-[150%] -translate-y-1/2 opacity-90"
+        className="pointer-events-none absolute inset-x-0 top-1/2 h-[125%] -translate-y-1/2 opacity-90 sm:inset-x-[-20%] sm:h-[150%]"
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1, opacity: 0.9 }}
         transition={{ type: "spring", stiffness: 160, damping: 14 }}

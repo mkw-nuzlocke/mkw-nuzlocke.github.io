@@ -38,7 +38,14 @@ export function PositionInput({ onSelect, disabled }: Props) {
           >
             <span className="flex flex-col items-center leading-tight">
               <span className="slant text-sm font-black italic md:text-base">
-                {label}
+                {position === 6 ? (
+                  <>
+                    <span className="sm:hidden">6th+</span>
+                    <span className="hidden sm:inline">6th or worse</span>
+                  </>
+                ) : (
+                  label
+                )}
               </span>
               <span
                 className={`mt-0.5 text-[9px] font-bold uppercase tracking-wider ${

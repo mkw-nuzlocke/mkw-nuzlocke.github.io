@@ -13,11 +13,11 @@ export function PointsMeter({ points }: Props) {
 
   return (
     <div className="w-full max-w-md">
-      <div className="mb-1 flex items-end justify-between">
+      <div className="mb-1 flex items-end justify-between gap-2">
         <span className="slant text-lg font-black italic text-[var(--n-black)]">
           Points
         </span>
-        <span className="slant text-2xl font-black italic text-[var(--n-red)]">
+        <span className="slant whitespace-nowrap text-2xl font-black italic text-[var(--n-red)]">
           {points}
           <span className="text-base text-[var(--n-ink)]"> / {WIN_POINTS}</span>
         </span>

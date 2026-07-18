@@ -15,7 +15,7 @@ export function RosterStrip({ roster, activeRacerId }: Props) {
   ];
 
   return (
-    <div className="flex w-full flex-wrap gap-2 pb-2">
+    <div className="flex w-full flex-wrap justify-center gap-2 pb-2 sm:justify-start">
       {ordered.map((entry) => (
         <RacerCard
           key={entry.racerId}
