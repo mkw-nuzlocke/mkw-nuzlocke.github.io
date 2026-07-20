@@ -25,8 +25,19 @@ export function PageFrame({ children }: { children?: React.ReactNode }) {
       <footer className="relative z-10">
         <div className="h-2 bg-[var(--n-yellow)]" />
         <div className="bg-pattern-dark flex items-center justify-center px-4 py-6">
-          <p className="text-center text-xs font-semibold text-white/80">
-            Fan-made companion tracker · Not affiliated with Nintendo
+          <p className="max-w-lg text-center text-xs font-semibold leading-relaxed text-white/80">
+            Nuzlocke rules by{" "}
+            <a
+              href="https://www.youtube.com/watch?v=TXEu7ROf6po"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-white/35 underline-offset-2 transition-colors hover:text-white hover:decoration-white"
+            >
+              JHart
+            </a>
+            <span className="mt-1 block text-white/65">
+              Fan-made companion tracker · Not affiliated with Nintendo
+            </span>
           </p>
         </div>
       </footer>
